@@ -18,14 +18,6 @@ $(function() {
 			wrap.find('table').append(data.text);
 			$('#table').show();
 		}
-		else if (event.data.type === "update_Counts"){
-			var data = event.data.jobs;
-			
-			document.getElementById('online_1').html(data.online_4);
-			document.getElementById('online_2').html = data.online_4;
-			document.getElementById('online_3').innerHTML = data.online_1;
-			document.getElementById('online_4').innerHTML(data.online_4);
-		}
 	});
 });
 /* ########################### */
