@@ -22,6 +22,9 @@ cfg.color = {
     profile_2 = "#ff8800;",
     profile_3 = "#00ff85;",
     profile_4 = "grey;",
+	
+	job_name = "rgb(0, 170, 0)",
+	phone_number = "rgb(0, 170, 0)",
 }
 
 return cfg

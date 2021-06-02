@@ -44,23 +44,17 @@ var cat_id_color = "rgb(204, 204, 204)";                                        
 var cat_name_color = "rgb(204, 204, 204)";                                          /* Name Catagory Color */
 
 /* ################################ */
-/* Table */
-var job_name_color = "green";                                                       /* Job Title Text Color ( Hidden by Default )*/
-
-var phone_number_color = "green";                                                   /* Phone Number Text Color ( Hidden by Default ) */
-
-/* ################################ */
 /* Footer Bar Info */
-var online_1 = "Owner" + ":";                var online_color_1 = "#f100ff";         /* 1st bottom counter name and color */
+var online_1 = "Owner";                var online_color_1 = "#f100ff";         /* 1st bottom counter name and color */
 var online_counter_color_1 = "rgb(204, 204, 204)";
 
-var online_2 = "Admin" + ":";                var online_color_2 = "#ff8800";         /* 2nd bottom counter name and color */
+var online_2 = "Admin";                var online_color_2 = "#ff8800";         /* 2nd bottom counter name and color */
 var online_counter_color_2 = "rgb(204, 204, 204)";
 
-var online_3 = "Mod" + ":";                  var online_color_3 = "#00ff85";         /* 3rd bottom counter name and color */
+var online_3 = "Mod";                  var online_color_3 = "#00ff85";         /* 3rd bottom counter name and color */
 var online_counter_color_3 = "rgb(204, 204, 204)";
 
-var online_4 = "User" + ":";                 var online_color_4 = "grey";            /* 4th bottom counter name and color */
+var online_4 = "User";                 var online_color_4 = "grey";            /* 4th bottom counter name and color */
 var online_counter_color_4 = "rgb(204, 204, 204)";
 
 /* ################################ */
@@ -138,27 +132,21 @@ document.getElementById("extra_count_4").style.color = extra_counter_color_4;
 document.getElementById('cat_id').style.color = cat_id_color;                       /* Catagories Label 1 Color */
 document.getElementById('cat_name').style.color = cat_name_color;                   /* Catagories Label 2 Color */
 /* ################################ */
-/*          Table Style             */
-/* ################################ */
-document.getElementById("job_name").style.color = job_name_color;                   /* All Users Job Title Color */
-
-document.getElementById("phone_number").style.color = phone_number_color;           /* All Users Phone Number Color */
-/* ################################ */
 /*          bottom Bar           */
 /* ################################ */
-document.getElementById('online_1').innerHTML = online_1;                           /* Online counter (default: Owner)*/
+document.getElementById('online_1').innerHTML = online_1 + ":";                           /* Online counter (default: Owner)*/
 document.getElementById("online_1").style.color = online_color_1;
 document.getElementById("online_count_1").style.color = online_counter_color_1;
 
-document.getElementById('online_2').innerHTML = online_2;                           /* Online counter (default: Admin) */
+document.getElementById('online_2').innerHTML = online_2 + ":";                           /* Online counter (default: Admin) */
 document.getElementById("online_2").style.color = online_color_2;
 document.getElementById("online_count_2").style.color = online_counter_color_2;
 
-document.getElementById('online_3').innerHTML = online_3;                           /* Online counter (default: Mod) */
+document.getElementById('online_3').innerHTML = online_3 + ":";                           /* Online counter (default: Mod) */
 document.getElementById("online_3").style.color = online_color_3;
 document.getElementById("online_count_3").style.color = online_counter_color_3;
 
-document.getElementById('online_4').innerHTML = online_4;                           /* Online counter (default: User) */
+document.getElementById('online_4').innerHTML = online_4 + ":";                           /* Online counter (default: User) */
 document.getElementById("online_4").style.color = online_color_4;
 document.getElementById("online_count_4").style.color = online_counter_color_4;
 

@@ -220,15 +220,9 @@ th, td {
     width: 50%;
     text-align: center;
 }
-#job_name{
-    color: rgb(0, 170, 0);
-}
 .player_phone{
     width: 50%;
     text-align: center;
-}
-#phone_number{
-    color: rgb(0, 170, 0);
 }
 /*############################*/
 /*####  bottom bar Section   #####*/

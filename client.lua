@@ -20,7 +20,7 @@ end)
 --##################################
 RegisterNUICallback("NUIFocusOff", function() --close function for when mouse is active
     SetNuiFocus(false, false)
-	CloseScoreboard()
+	scoreboard_Active = false
 end)
 RegisterNUICallback("NUIFocusOff_m", function() --close function for mouse
 	SetNuiFocus(false, false)
@@ -55,10 +55,10 @@ RegisterNetEvent('Boss_scoreboard:setScoreboard')
 AddEventHandler('Boss_scoreboard:setScoreboard', function(info)
 	local players = {}
 	table.insert(players,
-		'<tr><td><button class="profile" id="profile" style="border-color: '.. info.color ..'"><div div class="player_info"><div id="player_id">'
+		'<tr><td><button class="profile" id="profile" style="border-color: '.. info.color ..'"><div class="player_info"><div id="player_id">'
 		.. info.id ..'</div><div id="player_name">'
-		.. info.name ..'</div></div ><div class="extra_info"><div class="player_job"><div id="job_title">Job Title:</div><div id="job_name">'
-		.. info.job ..'</div></div><div class="player_phone"><div id="phone_label">Phone:</div><div id="phone_number">'
+		.. info.name ..'</div></div ><div class="extra_info"><div class="player_job"><div id="job_title">Job Title:</div><div id="job_name" style="color: '.. info.job_color ..'">'
+		.. info.job ..'</div></div><div class="player_phone"><div id="phone_label">Phone:</div><div id="phone_number" style="color: '.. info.phone_color ..'">'
 		.. info.phone ..'</div></div></div></button></td></tr>'
 	)
 	

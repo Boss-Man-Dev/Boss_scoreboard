@@ -1,18 +1,9 @@
-local lang = vRP.lang
-local Luang = module("vrp", "lib/Luang")
-
 local Boss_scoreboard = class("Boss_scoreboard", vRP.Extension)
 
 function Boss_scoreboard:__construct()
 	vRP.Extension.__construct(self)
   
 	self.cfg = module("Boss_scoreboard", "cfg/cfg")
-	
-	-- load lang
-	self.luang = Luang()
-	self.luang:loadLocale(vRP.cfg.lang, module("Boss_scoreboard", "cfg/lang/"..vRP.cfg.lang))
-	self.lang = self.luang.lang[vRP.cfg.lang]
-	
 end
 
 --##################################
@@ -67,7 +58,10 @@ function Boss_scoreboard.event:PlayerInfo()
 		info.id = content.."<div>"..id.."</div>"
 		info.name = content.."<div>"..firstName.." "..lastName.."</div>"
 		info.job = content.."<div>"..m_job.."</div>"
+		info.job_color = color.job_name
 		info.phone = "<div>"..phoneNumber.."</div>"
+		info.phone_color = color.phone_number
+		
 	end
 	TriggerClientEvent("Boss_scoreboard:setScoreboard", source, info)
 end
